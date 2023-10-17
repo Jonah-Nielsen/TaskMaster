@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Taskmaster</name>
+    </assembly>
+    <members>
+        <member name="T:Taskmaster.ViewModel.MainViewModel">
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+            <inheritdoc/>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.Newpath">
+            <inheritdoc cref="F:Taskmaster.ViewModel.MainViewModel.newpath"/>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.Items">
+            <inheritdoc cref="F:Taskmaster.ViewModel.MainViewModel.items"/>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.Text">
+            <inheritdoc cref="F:Taskmaster.ViewModel.MainViewModel.text"/>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.Path">
+            <inheritdoc cref="F:Taskmaster.ViewModel.MainViewModel.path"/>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.EditorText">
+            <inheritdoc cref="F:Taskmaster.ViewModel.MainViewModel.editorText"/>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.addCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.AddCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.AddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.Add"/>.</summary>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.deleteCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.DeleteCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.DeleteCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.Delete(System.String)"/>.</summary>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.clickCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.ClickCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.ClickCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand`1"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.Click(System.String)"/>.</summary>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.refreshCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.RefreshCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.RefreshCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.Refresh"/>.</summary>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.saveCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.SaveCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.SaveCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.Save"/>.</summary>
+        </member>
+        <member name="F:Taskmaster.ViewModel.MainViewModel.cHDirCommand">
+            <summary>The backing field for <see cref="P:Taskmaster.ViewModel.MainViewModel.CHDirCommand"/>.</summary>
+        </member>
+        <member name="P:Taskmaster.ViewModel.MainViewModel.CHDirCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:Taskmaster.ViewModel.MainViewModel.CHDir"/>.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Newpath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Newpath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.Path">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "Path" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.EditorText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "EditorText" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Newpath">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Newpath" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Items">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Items" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Text">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Text" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.Path">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "Path" generated properties.</summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.EditorText">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "EditorText" generated properties.</summary>
+        </member>
+    </members>
+</doc>

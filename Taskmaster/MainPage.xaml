@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taskmaster.MainPage"
+             xmlns:viewmodel="clr-namespace:Taskmaster.ViewModel"
+             x:DataType="viewmodel:MainViewModel">
+             
+
+    <Grid ColumnSpacing="12" RowSpacing="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid
+            
+            ColumnSpacing="12" 
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#043e82"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            
+            <Button Text="New Task"
+                FontSize="14"
+                Grid.Column="3"
+                Command="{Binding AddCommand}"
+            />
+
+        </Grid>
+        <CollectionView
+                    Grid.Row="3" Grid.Column="0" 
+                    ItemsSource="{Binding Items}"
+                    BackgroundColor="Gray"
+                    SelectionMode="Single">
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type x:String}">
+                    <Grid
+                        Padding=" 0, 5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <Frame>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Command="{Binding Source= {RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=ClickCommand}"
+                                    CommandParameter="{Binding .}"
+                                    />
+
+                            </Frame.GestureRecognizers>
+
+                            <Label Text="{Binding .}"
+                                   Grid.Column="1"
+                                   />
+                        </Frame>
+
+                        <ImageButton
+                            Source="checkmark.png"
+                            Grid.Column="2"
+                            Command="{Binding Source= {RelativeSource AncestorType={x:Type viewmodel:MainViewModel}}, Path=DeleteCommand}"
+                            CommandParameter="{Binding .}"
+                            BackgroundColor="Transparent"
+                            BorderColor="Transparent"
+                            />
+
+                    </Grid>
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+            
+        </CollectionView>
+        <Entry Placeholder="Current Task Name"
+               BackgroundColor="#043e82"
+               Grid.Row="2"
+               Grid.Column="1"
+               VerticalTextAlignment="Center"
+               HorizontalTextAlignment="Center"
+               FontSize="26"
+               Text="{Binding Text}"
+               
+               
+               />
+        <Label BackgroundColor="#043e82"
+               Grid.Row="2"
+               Grid.Column="0"/>
+
+        <Editor x:Name="editor"
+        Grid.Row="3"
+        Grid.Column="1"
+        BackgroundColor="BlanchedAlmond"
+        TextColor="Black"
+        Placeholder="Enter your response here"
+        Text="{Binding EditorText}"
+        
+        />
+        <Button Text="Save"
+                FontSize="14"
+                Grid.Column="0"
+                Grid.Row="4"
+                Command="{Binding SaveCommand}"
+                MaximumWidthRequest="100"
+                
+            />
+
+        <ImageButton
+            Source="refresh.png"
+            Grid.Column="0"
+            Grid.Row="2"
+            MaximumWidthRequest="50"
+            MaximumHeightRequest="50"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"
+            BackgroundColor="Transparent"
+            BorderColor="Transparent"
+            Command="{Binding RefreshCommand}"       
+            />
+
+
+
+        <Grid 
+            Grid.Column="1"
+            Grid.Row="1"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.2*"/>
+
+            </Grid.ColumnDefinitions>
+            <Label
+                Text="{Binding Path}"
+            
+                Grid.Column="0"
+                
+                TextColor="LightGray"/>
+            <Button
+                Text="Help"
+                Command="{Binding HelpCommand}"
+                Grid.Column="1"
+    />
+
+        </Grid>
+
+
+        <Button
+            Text="Update Path"
+            Command="{Binding CHDirCommand}"
+            Grid.Row="1"
+            />
+       
+
+
+        <!--TextChanged="OnEditorTextChanged"
+        Completed="OnEditorCompleted"-->
+        
+
+
+
+    </Grid>
+
+</ContentPage>
