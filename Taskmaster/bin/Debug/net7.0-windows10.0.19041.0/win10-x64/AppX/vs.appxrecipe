@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-10-17T16:34:45.823</Modified>
+      <Modified>2023-11-13T23:14:06.534</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-10-17T16:20:54.007</Modified>
+      <Modified>2023-11-13T22:54:48.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Taskmaster.runtimeconfig.json">
       <PackagePath>Taskmaster.runtimeconfig.json</PackagePath>
@@ -43,15 +43,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Taskmaster.dll">
       <PackagePath>Taskmaster.dll</PackagePath>
-      <Modified>2023-10-17T16:34:44.305</Modified>
+      <Modified>2023-11-13T23:14:05.275</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>Taskmaster.exe</PackagePath>
-      <Modified>2023-10-17T16:34:44.319</Modified>
+      <Modified>2023-11-13T23:14:05.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Taskmaster.deps.json">
       <PackagePath>Taskmaster.deps.json</PackagePath>
-      <Modified>2023-10-16T22:04:49.767</Modified>
+      <Modified>2023-11-13T22:54:48.152</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.12\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1175,23 +1175,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
       <PackagePath>dotnet_bot.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.889</Modified>
+      <Modified>2023-11-10T00:21:35.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
       <PackagePath>dotnet_bot.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.902</Modified>
+      <Modified>2023-11-10T00:21:35.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
       <PackagePath>dotnet_bot.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.913</Modified>
+      <Modified>2023-11-10T00:21:35.238</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
       <PackagePath>dotnet_bot.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.934</Modified>
+      <Modified>2023-11-10T00:21:35.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.977</Modified>
+      <Modified>2023-11-10T00:21:35.298</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\prtfpic.scale-100.png">
+      <PackagePath>prtfpic.scale-100.png</PackagePath>
+      <Modified>2023-10-01T18:52:38.104</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\refresh.scale-100.png">
       <PackagePath>refresh.scale-100.png</PackagePath>
@@ -1263,11 +1267,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogo.ico">
       <PackagePath>taskmasterlogo.ico</PackagePath>
-      <Modified>2023-10-12T03:25:33.887</Modified>
+      <Modified>2023-11-10T00:21:35.217</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterLogo.scale-100.png">
       <PackagePath>taskmasterLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:21:43.453</Modified>
+      <Modified>2023-11-10T00:20:55.459</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterLogo.scale-125.png">
       <PackagePath>taskmasterLogo.scale-125.png</PackagePath>
@@ -1307,183 +1311,183 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLargeTile.scale-100.png">
       <PackagePath>taskmasterlogoLargeTile.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.100</Modified>
+      <Modified>2023-11-10T00:21:35.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLargeTile.scale-125.png">
       <PackagePath>taskmasterlogoLargeTile.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.110</Modified>
+      <Modified>2023-11-10T00:21:35.424</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLargeTile.scale-150.png">
       <PackagePath>taskmasterlogoLargeTile.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.122</Modified>
+      <Modified>2023-11-10T00:21:35.435</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLargeTile.scale-200.png">
       <PackagePath>taskmasterlogoLargeTile.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.139</Modified>
+      <Modified>2023-11-10T00:21:35.451</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLargeTile.scale-400.png">
       <PackagePath>taskmasterlogoLargeTile.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.205</Modified>
+      <Modified>2023-11-10T00:21:35.510</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-lightunplated_targetsize-16.png">
       <PackagePath>taskmasterlogoLogo.altform-lightunplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.950</Modified>
+      <Modified>2023-11-10T00:21:35.270</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-lightunplated_targetsize-24.png">
       <PackagePath>taskmasterlogoLogo.altform-lightunplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.952</Modified>
+      <Modified>2023-11-10T00:21:35.272</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-lightunplated_targetsize-256.png">
       <PackagePath>taskmasterlogoLogo.altform-lightunplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.963</Modified>
+      <Modified>2023-11-10T00:21:35.282</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-lightunplated_targetsize-32.png">
       <PackagePath>taskmasterlogoLogo.altform-lightunplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.955</Modified>
+      <Modified>2023-11-10T00:21:35.274</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-lightunplated_targetsize-48.png">
       <PackagePath>taskmasterlogoLogo.altform-lightunplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.958</Modified>
+      <Modified>2023-11-10T00:21:35.276</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-unplated_targetsize-16.png">
       <PackagePath>taskmasterlogoLogo.altform-unplated_targetsize-16.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.931</Modified>
+      <Modified>2023-11-10T00:21:35.255</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-unplated_targetsize-24.png">
       <PackagePath>taskmasterlogoLogo.altform-unplated_targetsize-24.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.935</Modified>
+      <Modified>2023-11-10T00:21:35.257</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-unplated_targetsize-256.png">
       <PackagePath>taskmasterlogoLogo.altform-unplated_targetsize-256.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.947</Modified>
+      <Modified>2023-11-10T00:21:35.268</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-unplated_targetsize-32.png">
       <PackagePath>taskmasterlogoLogo.altform-unplated_targetsize-32.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.938</Modified>
+      <Modified>2023-11-10T00:21:35.259</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.altform-unplated_targetsize-48.png">
       <PackagePath>taskmasterlogoLogo.altform-unplated_targetsize-48.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.940</Modified>
+      <Modified>2023-11-10T00:21:35.262</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.scale-100.png">
       <PackagePath>taskmasterlogoLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.899</Modified>
+      <Modified>2023-11-10T00:21:35.225</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.scale-125.png">
       <PackagePath>taskmasterlogoLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.902</Modified>
+      <Modified>2023-11-10T00:21:35.227</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.scale-150.png">
       <PackagePath>taskmasterlogoLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.905</Modified>
+      <Modified>2023-11-10T00:21:35.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.scale-200.png">
       <PackagePath>taskmasterlogoLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.907</Modified>
+      <Modified>2023-11-10T00:21:35.233</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.scale-400.png">
       <PackagePath>taskmasterlogoLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.911</Modified>
+      <Modified>2023-11-10T00:21:35.237</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.targetsize-16.png">
       <PackagePath>taskmasterlogoLogo.targetsize-16.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.914</Modified>
+      <Modified>2023-11-10T00:21:35.240</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.targetsize-24.png">
       <PackagePath>taskmasterlogoLogo.targetsize-24.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.916</Modified>
+      <Modified>2023-11-10T00:21:35.242</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.targetsize-256.png">
       <PackagePath>taskmasterlogoLogo.targetsize-256.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.929</Modified>
+      <Modified>2023-11-10T00:21:35.253</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.targetsize-32.png">
       <PackagePath>taskmasterlogoLogo.targetsize-32.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.920</Modified>
+      <Modified>2023-11-10T00:21:35.245</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoLogo.targetsize-48.png">
       <PackagePath>taskmasterlogoLogo.targetsize-48.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.923</Modified>
+      <Modified>2023-11-10T00:21:35.247</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoMediumTile.scale-100.png">
       <PackagePath>taskmasterlogoMediumTile.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.001</Modified>
+      <Modified>2023-11-10T00:21:35.319</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoMediumTile.scale-125.png">
       <PackagePath>taskmasterlogoMediumTile.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.005</Modified>
+      <Modified>2023-11-10T00:21:35.323</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoMediumTile.scale-150.png">
       <PackagePath>taskmasterlogoMediumTile.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.010</Modified>
+      <Modified>2023-11-10T00:21:35.327</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoMediumTile.scale-200.png">
       <PackagePath>taskmasterlogoMediumTile.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.017</Modified>
+      <Modified>2023-11-10T00:21:35.333</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoMediumTile.scale-400.png">
       <PackagePath>taskmasterlogoMediumTile.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.033</Modified>
+      <Modified>2023-11-10T00:21:35.350</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoSmallTile.scale-100.png">
       <PackagePath>taskmasterlogoSmallTile.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.981</Modified>
+      <Modified>2023-11-10T00:21:35.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoSmallTile.scale-125.png">
       <PackagePath>taskmasterlogoSmallTile.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.984</Modified>
+      <Modified>2023-11-10T00:21:35.302</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoSmallTile.scale-150.png">
       <PackagePath>taskmasterlogoSmallTile.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.987</Modified>
+      <Modified>2023-11-10T00:21:35.305</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoSmallTile.scale-200.png">
       <PackagePath>taskmasterlogoSmallTile.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.990</Modified>
+      <Modified>2023-11-10T00:21:35.308</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoSmallTile.scale-400.png">
       <PackagePath>taskmasterlogoSmallTile.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.997</Modified>
+      <Modified>2023-11-10T00:21:35.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoStoreLogo.scale-100.png">
       <PackagePath>taskmasterlogoStoreLogo.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.966</Modified>
+      <Modified>2023-11-10T00:21:35.283</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoStoreLogo.scale-125.png">
       <PackagePath>taskmasterlogoStoreLogo.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.968</Modified>
+      <Modified>2023-11-10T00:21:35.287</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoStoreLogo.scale-150.png">
       <PackagePath>taskmasterlogoStoreLogo.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.971</Modified>
+      <Modified>2023-11-10T00:21:35.289</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoStoreLogo.scale-200.png">
       <PackagePath>taskmasterlogoStoreLogo.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.974</Modified>
+      <Modified>2023-11-10T00:21:35.292</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoStoreLogo.scale-400.png">
       <PackagePath>taskmasterlogoStoreLogo.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:33.978</Modified>
+      <Modified>2023-11-10T00:21:35.296</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoWideTile.scale-100.png">
       <PackagePath>taskmasterlogoWideTile.scale-100.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.038</Modified>
+      <Modified>2023-11-10T00:21:35.354</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoWideTile.scale-125.png">
       <PackagePath>taskmasterlogoWideTile.scale-125.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.044</Modified>
+      <Modified>2023-11-10T00:21:35.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoWideTile.scale-150.png">
       <PackagePath>taskmasterlogoWideTile.scale-150.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.051</Modified>
+      <Modified>2023-11-10T00:21:35.367</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoWideTile.scale-200.png">
       <PackagePath>taskmasterlogoWideTile.scale-200.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.062</Modified>
+      <Modified>2023-11-10T00:21:35.377</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterlogoWideTile.scale-400.png">
       <PackagePath>taskmasterlogoWideTile.scale-400.png</PackagePath>
-      <Modified>2023-10-12T03:25:34.093</Modified>
+      <Modified>2023-11-10T00:21:35.407</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterMediumTile.scale-100.png">
       <PackagePath>taskmasterMediumTile.scale-100.png</PackagePath>
@@ -1564,6 +1568,10 @@
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterWideTile.scale-400.png">
       <PackagePath>taskmasterWideTile.scale-400.png</PackagePath>
       <Modified>2023-10-12T03:21:43.751</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tlogo.scale-100.png">
+      <PackagePath>tlogo.scale-100.png</PackagePath>
+      <Modified>2023-11-10T00:20:55.459</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -52,12 +52,26 @@
 	  <None Remove="Resources\Images\checkmark.jpg" />
 	  <None Remove="Resources\Images\checkmark.png" />
 	  <None Remove="Resources\Images\Refresh.png" />
+	  <None Remove="Resources\Images\tlogo.png" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="CommunityToolkit.Maui" Version="6.0.0" />
 		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.1" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Help.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="StartPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="images\" />
 	</ItemGroup>
 
 </Project>

@@ -895,6 +895,9 @@
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
       <PackagePath>dotnet_bot.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\prtfpic.scale-100.png">
+      <PackagePath>prtfpic.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\refresh.scale-100.png">
       <PackagePath>refresh.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -1173,6 +1176,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\taskmasterWideTile.scale-400.png">
       <PackagePath>taskmasterWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\niels\source\repos\Taskmaster\Taskmaster\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\tlogo.scale-100.png">
+      <PackagePath>tlogo.scale-100.png</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

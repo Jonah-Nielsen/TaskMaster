@@ -10,12 +10,22 @@ namespace Taskmaster.ViewModel;
 using CommunityToolkit.Maui;
 using CommunityToolkit.Maui.Alerts;
 using CommunityToolkit.Maui.Core;
+using System.Diagnostics;
+using System.Linq;
 using System.Threading;
+
 
 public partial class MainViewModel : ObservableObject
 {
     public MainViewModel()
     {
+        Prioritytext = "NA";
+        Priority = 0;
+        dueDate = DateTime.Now;
+        IsChecked = false;
+        DateEnabled = false;
+        DueDateLabel = Color.FromRgb(128, 128, 128);
+        DateTextColor = Color.FromRgb(0, 0, 0);
         Items = new ObservableCollection<string>();
         string[] txtFiles = Directory.GetFiles(path, "*.txt");
 
@@ -40,7 +50,31 @@ public partial class MainViewModel : ObservableObject
 	string text;
 
     [ObservableProperty]
-    string path = "C:\\Users\\Public"; //This is the Default Path
+    int priority;
+
+    [ObservableProperty]
+    string prioritytext;
+
+    [ObservableProperty]
+    string path = Preferences.Get("path", "default_value"); //This is the Default Path
+
+    [ObservableProperty]
+    string due;
+
+    [ObservableProperty]
+    DateTime dueDate;
+
+    [ObservableProperty]
+    Color dueDateLabel;
+
+    [ObservableProperty]
+    Color dateTextColor;
+
+    [ObservableProperty]
+    bool dateEnabled;
+
+    [ObservableProperty]
+    bool isChecked;
 
     [RelayCommand]
 	Task Add()
@@ -49,8 +83,14 @@ public partial class MainViewModel : ObservableObject
             return Task.CompletedTask;
         }
 
-		//Items.Add(Text);
-		Text = string.Empty;
+        Prioritytext = "NA";
+        Priority = 0;
+        dueDate = DateTime.Now;
+        IsChecked = false;
+        DateEnabled = false;
+        DueDateLabel = Color.FromRgb(128, 128, 128);
+        DateTextColor = Color.FromRgb(0, 0, 0);
+        Text = string.Empty;
         EditorText = string.Empty;
         return Task.CompletedTask;
     }
@@ -89,8 +129,130 @@ public partial class MainViewModel : ObservableObject
             // Open the text file using a stream reader.
             using (var file = new StreamReader(path + "\\" + s + ".txt"))
             {
-                EditorText = file.ReadToEnd();
-           }
+
+                string newText = file.ReadToEnd();
+                string[] line = newText.Split('\n');
+
+                // string[] newEntryString = new string[line.Length - 2];
+                //// if (line.Length >= 2) 
+                //  {
+                //      Array.Copy(line, newEntryString, line.Length - 2);
+                //   }
+                //  newText = line[0];//string.Join("\n", newEntryString);
+                string tempText = "";
+                if (newText.Contains("##!!"))
+                {
+                    if (line.Length >= 2)
+                    {
+
+                        if (line[line.Length - 2].Contains("Low"))
+                        {
+                            Prioritytext = "Low";
+                            Priority = 1;
+
+
+                        }
+                        else if (line[line.Length - 2].Contains("Medium"))
+                        {
+                            Prioritytext = "Medium";
+                            Priority = 2;
+                        }
+                        else if (line[line.Length - 2].Contains("High"))
+                        {
+                            Prioritytext = "High";
+                            Priority = 3;
+                        }
+                        else
+                        {
+                            Prioritytext = "NA";
+                            Priority = 0;
+                        }
+
+                        if (line[line.Length - 2].Contains(":"))
+                        {
+                            string dateText = line[line.Length - 2].Split(":")[1];
+                            DateTime parsedDateTime;
+                            if (DateTime.TryParse(dateText, out parsedDateTime))
+                            {
+                                DueDate = DateTime.Parse(dateText);
+                            }
+                            DateEnabled = true;
+                            IsChecked = true;
+                            DueDateLabel = Color.FromRgb(255, 255, 255);
+                            DateTextColor = Color.FromRgb(255, 255, 255);
+                        }
+
+                        else
+                        {
+                            DateEnabled = false;
+                            IsChecked = false;
+                            DueDateLabel = Color.FromRgb(128, 128, 128);
+                            DateTextColor = Color.FromRgb(0, 0, 0);
+                        }
+
+                        for (int i = 0; i < line.Length - 2; i++)
+                        {
+
+                            tempText += line[i];
+                        }
+                        newText = tempText;
+                    }
+
+                    else
+                    {
+                        Prioritytext = "NA";
+                        Priority = 0;
+                    }
+
+                    if (line[line.Length - 2].Contains(":"))
+                    {
+                        string date = line[line.Length - 2].Split(":")[1];
+                        DateTime parsedDateTime;
+                        if (DateTime.TryParse(date, out parsedDateTime))
+                        {
+                            DateEnabled = true;
+                            IsChecked = true;
+                            DueDateLabel = Color.FromRgb(255, 255, 255);
+                            DateTextColor = Color.FromRgb(255, 255, 255);
+                            DueDate = DateTime.Parse(date);
+                        }
+                            
+                    }
+                    else
+                    {
+                        DateEnabled = false;
+                        IsChecked = false;
+                        DueDateLabel = Color.FromRgb(128, 128, 128);
+                        DateTextColor = Color.FromRgb(0, 0, 0);
+                    }
+                    
+                }
+                else
+                {
+                    Prioritytext = "NA";
+                    Priority = 0;
+                    DateEnabled = false;
+                    IsChecked = false;
+                    DueDateLabel = Color.FromRgb(128, 128, 128);
+                    DateTextColor = Color.FromRgb(0, 0, 0);
+                }
+                
+
+
+                //if (line.Length >= 2) 
+                //  {
+                //    string[] newEntryString = new string[line.Length - 2];
+                //   Array.Copy(line, newEntryString, line.Length - 2);
+                //    newText = string.Join("\n", newEntryString);
+                //   }
+                
+                
+
+                EditorText = newText;
+
+                
+            }
+        
         }
         catch (IOException e)
         {
@@ -136,6 +298,46 @@ public partial class MainViewModel : ObservableObject
                 using (StreamWriter writer = new StreamWriter(path + "\\" + txt + ".txt"))
                 {
                     writer.WriteLine(EditorText);
+
+
+                    if (DateEnabled == true)
+                    {
+
+                            if (Priority == 1)
+                            {
+                                writer.WriteLine('\n' + "##!!Low:"+ DueDate.ToString("yyyy-MM-dd"));
+                            }
+                            else if (Priority == 2)
+                            {
+                                writer.WriteLine('\n' + "##!!Medium:"+DueDate.ToString("yyyy-MM-dd"));
+                            }
+                            else if (Priority == 3)
+                            {
+                                writer.WriteLine('\n' + "##!!High:"+ DueDate.ToString("yyyy-MM-dd"));
+                            }
+                            else
+                            {
+                                writer.WriteLine('\n' + "##!!:" + DueDate.ToString("yyyy-MM-dd"));
+                            }
+                    }
+
+                    else
+                    {
+                        if (Priority == 1)
+                        {
+                            writer.WriteLine('\n' + "##!!Low");
+                        }
+                        else if (Priority == 2)
+                        {
+                            writer.WriteLine('\n' + "##!!Medium");
+                        }
+                        else if (Priority == 3)
+                        {
+                            writer.WriteLine('\n' + "##!!High");
+                        }
+                    }
+
+
                 }
 
             }
@@ -192,8 +394,41 @@ public partial class MainViewModel : ObservableObject
     }
 
     [RelayCommand]
-     Task Help()
+    async Task Help(string s)
     {
-        return Task.CompletedTask;
+        try 
+        {
+            await Shell.Current.GoToAsync(nameof(Help));
+        }
+        catch(Exception ex) 
+        { 
+            Debug.WriteLine(ex.Message); 
+        }
+        
     }
+    public Command CheckChangedCommand => new Command(CheckChanged);
+
+
+    private void CheckChanged()
+    {
+        if (IsChecked == false)
+        {
+         //   IsChecked = false;
+            DateEnabled = false;
+            DueDateLabel = Color.FromRgb(128, 128, 128);
+            DateTextColor = Color.FromRgb(0, 0, 0);
+        }
+        
+
+        else
+        {
+            //IsChecked = true;
+            DateEnabled = true;
+            DueDateLabel = Color.FromRgb(255, 255, 255);
+            DateTextColor = Color.FromRgb(255, 255, 255);
+        }
+        
+    }
+
+
 }

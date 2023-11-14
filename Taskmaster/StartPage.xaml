@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taskmaster.StartPage"
+             xmlns:viewmodel="clr-namespace:Taskmaster.ViewModel"
+             x:DataType="viewmodel:StartViewModel"
+             Title="Taskmaster">
+
+
+    <Grid BackgroundColor="Black">
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="*"/>
+            
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Text="New Path"
+                    BackgroundColor="#043e82"
+                    TextColor="White"
+                    Command="{Binding NewPathCommand}"
+                    Margin="10"
+                    />
+            <Button Grid.Column="1"
+                    Text="New Default Path"
+                    BackgroundColor="#043e82"
+                    TextColor="White"
+                    Margin="10"
+                    Command="{Binding NewDefPathCommand}"
+                    />
+
+            
+                <Button  Text="{Binding Path}"
+                    Grid.Column="2"            
+                    TextColor="White"
+                    BackgroundColor="#043e82"
+                    Margin="10"
+                    />
+            
+        </Grid>
+        
+        
+        
+        <Image Grid.Row="1"
+               Margin="10"
+               Source="tlogo.png"
+               BackgroundColor="Transparent"
+               Scale="1"
+               
+            />
+        <Label BackgroundColor="BlanchedAlmond"
+               Grid.Row="2"
+               Margin="10"/>
+
+
+        <Button Grid.Row="3"
+                Text="Start"
+                Command="{Binding StartCommand}"
+                BackgroundColor="#043e82"
+                TextColor="White"
+                Margin="10"
+                />
+
+
+    </Grid>
+    
+</ContentPage>

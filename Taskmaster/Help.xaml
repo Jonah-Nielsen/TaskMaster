@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Taskmaster.Help"
+             Title="Help">
+
+    <ScrollView>
+        <VerticalStackLayout BackgroundColor="AntiqueWhite" Padding="0, 10">
+            <Label 
+                Text="PATH: The Path is the directory you are reading notes from. You can change the default path on the start page with the 'Update Default Path' button and 
+the current path with the 'Update Path' button."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"
+                />
+
+            <Label 
+                Text="Creating Tasks: (1) Initiate the task creation process by clicking the 'New Task' button. (2) The new task button will reset all fields, including the title, body, and scheduler. 
+(3)Provide task details by filling in the title, body, and scheduler fields. (4) Once you've completed the task information, click the 'Save' button to store your task in the directory."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"/>
+            <Label 
+                Text="To Update a Task: (1) Click on the task in the task list. (2) Modify the information as needed. (3) Click 'Save' to confirm the changes."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"/>
+
+            <Label 
+                Text="To Delete a Task: (1) Locate the task in the task list. (2) Click the checkmark next to the task to delete it."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"/>
+
+
+            <Label 
+                Text="Refreshing Task List: Click the refresh button to update the task list. Note that this is only necessary when manually adding a text file to your current directory."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"/>
+            <Label 
+                Text="Setting Task Priority: Adjust the priority or urgency of a task by selecting from 'NA,' 'Low,' 'Medium,' or 'High.' 'NA' is the default priority. 
+Use the '+' and '-' buttons next to the 'priority' label to increase or decrease priority, respectively. Priority goes from 'NA,' to 'Low,' to 'Medium,' to 'High.'"
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"
+                />
+            <Label 
+                Text="Setting Due Dates: To assign a due date to a task, simply click the checkbox located between the task's priority and the 'due date' label."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"
+                />
+            <Label 
+                Text="Important Note: When loading tasks with pre-assigned priorities and/or due dates, ensure that your file concludes with the following format: 
+'##!!Priority:yyyy-mmdd\n'. The 'Priority' field can be 'Low,' 'Medium,' 'High,' or left blank for a 'NA' (Not Applicable) priority. If there is a due date without a specified priority, 
+conclude with '##!!:yyyy-mm-dd\n'. Similarly, for tasks with priority but no due date, use '##!!Priority\n'. Please note that '\n' represents a new line character."
+                VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"
+                TextColor="#043e82"
+                FontSize="23"
+                Padding="10, 10"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

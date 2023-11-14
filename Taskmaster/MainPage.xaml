@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Taskmaster.MainPage"
              xmlns:viewmodel="clr-namespace:Taskmaster.ViewModel"
-             x:DataType="viewmodel:MainViewModel">
+             x:DataType="viewmodel:MainViewModel"
+             Title="Taskmaster">
+             
              
 
-    <Grid ColumnSpacing="12" RowSpacing="12">
+    <Grid ColumnSpacing="12" RowSpacing="12"
+          BackgroundColor="Black">
+        
         <Grid.RowDefinitions>
-            <RowDefinition Height="20"/>
+
             <RowDefinition Height="40"/>
             <RowDefinition Height="100"/>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
@@ -20,31 +26,151 @@
             <ColumnDefinition Width="2.5*"/>
         </Grid.ColumnDefinitions>
 
-        <Grid
-            
-            ColumnSpacing="12" 
-            Grid.Row="4"
-            Grid.ColumnSpan="2"
-            BackgroundColor="#043e82"
-            >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="0.5*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="0.5*"/>
-            </Grid.ColumnDefinitions>
 
-            
-            
-            <Button Text="New Task"
-                FontSize="14"
-                Grid.Column="3"
-                Command="{Binding AddCommand}"
+        <!--Top Row-->
+
+        <Button
+            Text="Update Path"
+            Command="{Binding CHDirCommand}"
+            Grid.Row="0"
+            TextColor="Black"
             />
 
+
+        <Grid 
+            Grid.Column="1"
+            Grid.Row="0"
+            >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="0.2*"/>
+
+                </Grid.ColumnDefinitions>
+                <Label
+                Text="{Binding Path}"
+        
+                Grid.Column="0"
+            
+                TextColor="LightGray"/>
+
+            
+            
+            <Button
+                Text="Help"
+                Grid.Column="1"
+                Command="{Binding HelpCommand}"
+                TextColor="Black"/>
+
         </Grid>
+
+        <!--Second Row-->
+        
+        <Entry Placeholder="Current Task Name"
+           BackgroundColor="#043e82"
+           Grid.Row="1"
+           Grid.Column="1"
+           VerticalTextAlignment="Center"
+           HorizontalTextAlignment="Center"
+           FontSize="26"
+           Text="{Binding Text}"
+           TextColor="White"
+       
+       
+       />
+        <Label BackgroundColor="#043e82"
+            Grid.Row="1"
+            Grid.Column="0"/>
+
+        <ImageButton
+            Source="refresh.png"
+            Grid.Column="0"
+            Grid.Row="1"
+            MaximumWidthRequest="50"
+            MaximumHeightRequest="50"
+            VerticalOptions="EndAndExpand"
+            HorizontalOptions="EndAndExpand"
+            BackgroundColor="Transparent"
+            BorderColor="Transparent"
+            Command="{Binding RefreshCommand}"       
+            />
+        
+        <!--Third Row-->
+        <Label Grid.Row="2"
+                   Text="Priority"
+                   HorizontalOptions="End"
+                   VerticalOptions="Center"
+                   TextColor="White"
+                   />
+
+        <HorizontalStackLayout 
+            Grid.Row="2"
+            Grid.Column="1"
+            Spacing="10">
+            
+            <HorizontalStackLayout 
+                Padding=" 20, 3"
+                Spacing="20"
+                
+                >
+                <VerticalStackLayout>
+                <Stepper x:Name="_stepper"
+                 Maximum="3"
+                 Increment="1"
+                 HorizontalOptions="Center"
+                 BackgroundColor="Gray"
+                 Value="{Binding Priority}"
+                 ValueChanged="OnStepperValueChanged"/>
+                </VerticalStackLayout>
+                
+                <Label Text="{Binding Prioritytext}"
+                       x:Name="stepLable"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       TextColor="White"/>
+
+            
+
+            </HorizontalStackLayout>
+            <CheckBox
+                x:Name="DueDateCheckbox"
+                IsChecked="{Binding IsChecked}"
+                Color="BlanchedAlmond"
+                >
+
+                <CheckBox.Behaviors>
+                    <toolkit:EventToCommandBehavior
+                    EventName="CheckedChanged"
+                    Command="{Binding CheckChangedCommand}" />
+                </CheckBox.Behaviors>
+
+
+            </CheckBox>
+
+
+
+
+
+            <Label x:Name="dueDate"
+                   Text="Due Date"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   TextColor="{Binding DueDateLabel}"
+                   >
+             
+            </Label>
+
+            <DatePicker 
+                        x:Name="DatePicker"
+                        Date="{Binding DueDate}"
+                        IsEnabled="{Binding DateEnabled}"
+                        TextColor="{Binding DateTextColor}"
+                    >
+                
+            </DatePicker>
+            
+        </HorizontalStackLayout>
+        <!--Fourth Row-->
+        
         <CollectionView
                     Grid.Row="3" Grid.Column="0" 
                     ItemsSource="{Binding Items}"
@@ -85,23 +211,10 @@
 
                 </DataTemplate>
             </CollectionView.ItemTemplate>
-            
-            
+
+
         </CollectionView>
-        <Entry Placeholder="Current Task Name"
-               BackgroundColor="#043e82"
-               Grid.Row="2"
-               Grid.Column="1"
-               VerticalTextAlignment="Center"
-               HorizontalTextAlignment="Center"
-               FontSize="26"
-               Text="{Binding Text}"
-               
-               
-               />
-        <Label BackgroundColor="#043e82"
-               Grid.Row="2"
-               Grid.Column="0"/>
+
 
         <Editor x:Name="editor"
         Grid.Row="3"
@@ -112,59 +225,53 @@
         Text="{Binding EditorText}"
         
         />
+
+        <!--Bottom Row-->
+
+        <Grid
+            
+            ColumnSpacing="12" 
+            Grid.Row="4"
+            Grid.ColumnSpan="2"
+            BackgroundColor="#043e82"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            
+            <Button Text="New Task"
+                FontSize="14"
+                Grid.Column="3"
+                Command="{Binding AddCommand}"
+                TextColor="Black"
+            />
+
+        </Grid>
+
         <Button Text="Save"
                 FontSize="14"
                 Grid.Column="0"
                 Grid.Row="4"
                 Command="{Binding SaveCommand}"
                 MaximumWidthRequest="100"
-                
-            />
-
-        <ImageButton
-            Source="refresh.png"
-            Grid.Column="0"
-            Grid.Row="2"
-            MaximumWidthRequest="50"
-            MaximumHeightRequest="50"
-            VerticalOptions="EndAndExpand"
-            HorizontalOptions="EndAndExpand"
-            BackgroundColor="Transparent"
-            BorderColor="Transparent"
-            Command="{Binding RefreshCommand}"       
+                TextColor="Black"
             />
 
 
 
-        <Grid 
-            Grid.Column="1"
-            Grid.Row="1"
-            >
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="0.2*"/>
-
-            </Grid.ColumnDefinitions>
-            <Label
-                Text="{Binding Path}"
-            
-                Grid.Column="0"
-                
-                TextColor="LightGray"/>
-            <Button
-                Text="Help"
-                Command="{Binding HelpCommand}"
-                Grid.Column="1"
-    />
-
-        </Grid>
 
 
-        <Button
-            Text="Update Path"
-            Command="{Binding CHDirCommand}"
-            Grid.Row="1"
-            />
+        
+
+
+        
        
 
 
