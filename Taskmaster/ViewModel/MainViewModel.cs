@@ -79,9 +79,7 @@ public partial class MainViewModel : ObservableObject
     [RelayCommand]
 	Task Add()
     {
-        if (string.IsNullOrWhiteSpace(Text)) {
-            return Task.CompletedTask;
-        }
+        
 
         Prioritytext = "NA";
         Priority = 0;
